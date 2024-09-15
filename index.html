@@ -85,7 +85,9 @@
       class="fixed inset-0 bg-black bg-opacity-90 z-40 hidden transition-transform duration-300 ease-in-out -translate-y-full"
     >
       <nav class="flex flex-col items-center justify-center h-full">
+        <a href="#home" class="nav-link text-2xl mb-6">Home</a>
         <a href="#about" class="nav-link text-2xl mb-6">About</a>
+        <a href="#skills" class="nav-link text-2xl mb-6">Skills</a>
         <a href="#experience" class="nav-link text-2xl mb-6">Experience</a>
         <a href="#projects" class="nav-link text-2xl mb-6">Projects</a>
         <a href="#contact" class="nav-link text-2xl mb-6">Contact</a>
@@ -103,14 +105,12 @@
       class="relative min-h-screen flex items-center justify-center text-white py-16 px-4 sm:px-6 overflow-hidden"
     >
       <div class="absolute inset-0 z-[-1]">
-        <!-- Darker Gradient Background -->
-        <div
-          class="absolute inset-0 bg-gradient-to-r from-[#0d0f20] via-[#1b1e34] to-[#2c3157] opacity-90"
-        ></div>
-        <!-- Background with Blur -->
-        <div
-          class="absolute inset-0 bg-[linear-gradient(#0d0f20,#1b1e34,#2c3157,#1b1e34)] blur-xl opacity-70"
-        ></div>
+        <!-- Background Image with Blur -->
+        <img
+          src="img/bg-dark-3.jpg"
+          alt="Background Image"
+          class="absolute inset-0 w-full h-full"
+        />
       </div>
       <div class="max-w-6xl w-full text-center relative z-10">
         <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
@@ -247,198 +247,254 @@
             </div>
           </div>
         </div>
-
-        <div class="max-w-4xl mx-auto text-center">
-          <h3 class="text-2xl font-bold mb-4">Socials</h3>
-          <p class="text-gray-700 mb-8">
-            Connect with me on various platforms to see my work, thoughts, and
-            daily adventures:
-          </p>
-          <div class="flex justify-center space-x-8">
-            <a
-              href="https://github.com/aldrian96"
-              target="_blank"
-              class="text-gray-600 hover:text-black transition duration-300"
-            >
-              <i class="fab fa-github text-3xl"></i>
-              <p class="mt-2 text-sm">GitHub</p>
-            </a>
-            <a
-              href="https://medium.com/@mhmdsaldrian96"
-              target="_blank"
-              class="text-gray-600 hover:text-gray-800 transition duration-300"
-            >
-              <i class="fab fa-medium text-3xl"></i>
-              <p class="mt-2 text-sm">Medium</p>
-            </a>
-            <a
-              href="https://www.instagram.com/mchsaa_/"
-              target="_blank"
-              class="text-gray-600 hover:text-pink-500 transition duration-300"
-            >
-              <i class="fab fa-instagram text-3xl"></i>
-              <p class="mt-2 text-sm">Instagram</p>
-            </a>
-            <a
-              href="https://x.com/mhmdsaa28"
-              target="_blank"
-              class="text-gray-600 hover:text-blue-400 transition duration-300"
-            >
-              <i class="fa-brands fa-x-twitter text-3xl"></i>
-              <p class="mt-2 text-sm">Twitter</p>
-            </a>
-            <a
-              href="https://www.facebook.com/mochsald/"
-              target="_blank"
-              class="text-gray-600 hover:text-blue-600 transition duration-300"
-            >
-              <i class="fa-brands fa-facebook text-3xl"></i>
-              <p class="mt-2 text-sm">Facebook</p>
-            </a>
-          </div>
-        </div>
       </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="bg-gray-900 pt-24 pb-12 px-4 md:px-8 lg:px-16">
+    <section
+      id="skills"
+      class="bg-gradient-to-b from-gray-900 to-gray-800 pt-24 pb-12 px-4 md:px-8 lg:px-16"
+    >
       <div class="max-w-6xl mx-auto">
-        <h2 class="text-center text-4xl font-semibold mb-12 relative">
+        <h2 class="text-center text-4xl font-bold mb-12 relative">
           <span
-            class="relative inline-block px-6 py-2 bg-gradient-to-r from-blue-500 to-green-500 text-transparent bg-clip-text"
+            class="relative inline-block px-6 py-2 bg-gradient-to-r from-blue-500 to-green-500 text-transparent bg-clip-text after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-1 after:bg-gradient-to-r after:from-blue-500 after:to-green-500"
           >
             Skills
           </span>
         </h2>
 
-        <p class="text-center text-lg text-gray-400 mb-12">
-          Here are some of the programming languages, frameworks, and tools I
-          have worked with to build projects ranging from web development to
-          backend services.
+        <p class="text-center text-lg text-gray-300 mb-16 max-w-3xl mx-auto">
+          Explore the programming languages, frameworks, and tools I've mastered
+          to create innovative web and backend solutions.
         </p>
 
-        <!-- Programming Languages -->
-        <div class="mb-12">
-          <h3 class="text-2xl text-center font-semibold text-white mb-6">
-            Programming Languages
-          </h3>
-          <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div class="relative">
+          <div id="skills-slider" class="overflow-hidden rounded-xl shadow-2xl">
             <div
-              class="bg-gray-800 p-6 rounded-lg border-2 border-transparent hover:border-white hover:shadow-lg transform hover:scale-105 transition-all duration-300 ease-out"
+              id="skills-track"
+              class="flex transition-transform duration-500 ease-in-out"
             >
-              <i class="fab fa-js fa-3x text-yellow-400 mb-4"></i>
-              <p class="text-white">JavaScript</p>
-            </div>
-            <div
-              class="bg-gray-800 p-6 rounded-lg border-2 border-transparent hover:border-white hover:shadow-lg transform hover:scale-105 transition-all duration-300 ease-out"
-            >
-              <i class="fab fa-python fa-3x text-blue-400 mb-4"></i>
-              <p class="text-white">Python</p>
-            </div>
-            <div
-              class="bg-gray-800 p-6 rounded-lg border-2 border-transparent hover:border-white hover:shadow-lg transform hover:scale-105 transition-all duration-300 ease-out"
-            >
-              <i class="fab fa-php fa-3x text-indigo-600 mb-4"></i>
-              <p class="text-white">PHP</p>
-            </div>
-            <div
-              class="bg-gray-800 p-6 rounded-lg border-2 border-transparent hover:border-white hover:shadow-lg transform hover:scale-105 transition-all duration-300 ease-out"
-            >
-              <i class="fa-brands fa-golang fa-3x text-blue-500 mb-4"></i>
-              <p class="text-white">Golang</p>
+              <!-- Programming Languages -->
+              <div
+                class="w-full flex-shrink-0 p-8 bg-gray-800 bg-opacity-50 backdrop-filter backdrop-blur-lg"
+              >
+                <h3 class="text-2xl text-center font-semibold text-white mb-8">
+                  Programming Languages
+                </h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                  <div
+                    class="bg-gray-700 rounded-xl p-6 flex flex-col items-center justify-center transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg hover:shadow-yellow-500/20 group"
+                  >
+                    <div
+                      class="w-20 h-20 bg-gradient-to-br from-yellow-500 to-orange-600 rounded-full flex items-center justify-center mb-4 group-hover:animate-pulse"
+                    >
+                      <i
+                        class="fab fa-js text-4xl text-white transition-colors duration-300"
+                      ></i>
+                    </div>
+                    <p
+                      class="text-lg font-semibold text-white group-hover:text-yellow-400 transition-all duration-300"
+                    >
+                      JavaScript
+                    </p>
+                  </div>
+                  <div
+                    class="bg-gray-700 rounded-xl p-6 flex flex-col items-center justify-center transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg hover:shadow-blue-500/20 group"
+                  >
+                    <div
+                      class="w-20 h-20 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mb-4 group-hover:animate-pulse"
+                    >
+                      <i
+                        class="fab fa-php text-4xl text-white transition-colors duration-300"
+                      ></i>
+                    </div>
+                    <p
+                      class="text-lg font-semibold text-white group-hover:text-blue-400 transition-all duration-300"
+                    >
+                      PHP
+                    </p>
+                  </div>
+                  <!-- Repeat for Python, PHP, Golang with different gradient colors -->
+                </div>
+              </div>
+
+              <!-- Frameworks -->
+              <div
+                class="w-full flex-shrink-0 p-8 bg-gray-800 bg-opacity-50 backdrop-filter backdrop-blur-lg"
+              >
+                <h3 class="text-2xl text-center font-semibold text-white mb-8">
+                  Frameworks
+                </h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                  <div
+                    class="bg-gray-700 rounded-xl p-6 flex flex-col items-center justify-center transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg hover:shadow-red-500/20 group"
+                  >
+                    <div
+                      class="w-20 h-20 bg-gradient-to-br from-red-500 to-pink-600 rounded-full flex items-center justify-center mb-4 group-hover:animate-pulse"
+                    >
+                      <i
+                        class="fab fa-laravel text-4xl text-white transition-colors duration-300"
+                      ></i>
+                    </div>
+                    <p
+                      class="text-lg font-semibold text-white group-hover:text-red-400 transition-all duration-300"
+                    >
+                      Laravel
+                    </p>
+                  </div>
+                  <div
+                    class="bg-gray-700 rounded-xl p-6 flex flex-col items-center justify-center transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg hover:shadow-blue-500/20 group"
+                  >
+                    <div
+                      class="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mb-4 group-hover:animate-pulse"
+                    >
+                      <i
+                        class="fab fa-react text-4xl text-white transition-colors duration-300"
+                      ></i>
+                    </div>
+                    <p
+                      class="text-lg font-semibold text-white group-hover:text-blue-400 transition-all duration-300"
+                    >
+                      React
+                    </p>
+                  </div>
+                  <div
+                    class="bg-gray-700 rounded-xl p-6 flex flex-col items-center justify-center transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg hover:shadow-green-500/20 group"
+                  >
+                    <div
+                      class="w-20 h-20 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center mb-4 group-hover:animate-pulse"
+                    >
+                      <i
+                        class="fab fa-vuejs text-4xl text-white transition-colors duration-300"
+                      ></i>
+                    </div>
+                    <p
+                      class="text-lg font-semibold text-white group-hover:text-green-400 transition-all duration-300"
+                    >
+                      Vue
+                    </p>
+                  </div>
+                  <div
+                    class="bg-gray-700 rounded-xl p-6 flex flex-col items-center justify-center transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg hover:shadow-red-500/20 group"
+                  >
+                    <div
+                      class="w-20 h-20 bg-gradient-to-br from-red-500 to-pink-600 rounded-full flex items-center justify-center mb-4 group-hover:animate-pulse"
+                    >
+                      <i
+                        class="fab fa-angular text-4xl text-white transition-colors duration-300"
+                      ></i>
+                    </div>
+                    <p
+                      class="text-lg font-semibold text-white group-hover:text-red-400 transition-all duration-300"
+                    >
+                      Angular
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tools & Technologies -->
+              <div
+                class="w-full flex-shrink-0 p-8 bg-gray-800 bg-opacity-50 backdrop-filter backdrop-blur-lg"
+              >
+                <h3 class="text-2xl text-center font-semibold text-white mb-8">
+                  Tools & Technologies
+                </h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                  <div
+                    class="bg-gray-700 rounded-xl p-6 flex flex-col items-center justify-center transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/20 group"
+                  >
+                    <div
+                      class="w-20 h-20 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-full flex items-center justify-center mb-4 group-hover:animate-pulse"
+                    >
+                      <i
+                        class="fab fa-docker text-4xl text-white transition-colors duration-300"
+                      ></i>
+                    </div>
+                    <p
+                      class="text-lg font-semibold text-white group-hover:text-cyan-400 transition-all duration-300"
+                    >
+                      Docker
+                    </p>
+                  </div>
+                  <div
+                    class="bg-gray-700 rounded-xl p-6 flex flex-col items-center justify-center transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg hover:shadow-orange-500/20 group"
+                  >
+                    <div
+                      class="w-20 h-20 bg-gradient-to-br from-orange-500 to-red-600 rounded-full flex items-center justify-center mb-4 group-hover:animate-pulse"
+                    >
+                      <i
+                        class="fab fa-git text-4xl text-white transition-colors duration-300"
+                      ></i>
+                    </div>
+                    <p
+                      class="text-lg font-semibold text-white group-hover:text-orange-400 transition-all duration-300"
+                    >
+                      Git
+                    </p>
+                  </div>
+                  <!-- Repeat for Git, AWS, Linux with different gradient colors -->
+                </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- Frameworks -->
-        <div class="mb-12">
-          <h3 class="text-2xl text-center font-semibold text-white mb-6">
-            Frameworks
-          </h3>
-          <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-            <div
-              class="bg-gray-800 p-6 rounded-lg border-2 border-transparent hover:border-white hover:shadow-lg transform hover:scale-105 transition-all duration-300 ease-out"
+          <!-- Navigation Buttons -->
+          <button
+            id="prev-btn"
+            class="absolute top-1/2 -left-4 transform -translate-y-1/2 bg-blue-500 hover:bg-blue-600 text-white rounded-full p-3 focus:outline-none transition-all duration-300 hover:scale-110 shadow-lg"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
             >
-              <i class="fab fa-laravel fa-3x text-red-600 mb-4"></i>
-              <p class="text-white">Laravel</p>
-            </div>
-            <div
-              class="bg-gray-800 p-6 rounded-lg border-2 border-transparent hover:border-white hover:shadow-lg transform hover:scale-105 transition-all duration-300 ease-out"
-            >
-              <i class="fab fa-react fa-3x text-blue-600 mb-4"></i>
-              <p class="text-white">React</p>
-            </div>
-            <div
-              class="bg-gray-800 p-6 rounded-lg border-2 border-transparent hover:border-white hover:shadow-lg transform hover:scale-105 transition-all duration-300 ease-out"
-            >
-              <i class="fab fa-vuejs fa-3x text-green-500 mb-4"></i>
-              <p class="text-white">Vue.js</p>
-            </div>
-            <div
-              class="bg-gray-800 p-6 rounded-lg border-2 border-transparent hover:border-white hover:shadow-lg transform hover:scale-105 transition-all duration-300 ease-out"
-            >
-              <i class="fab fa-angular fa-3x text-red-500 mb-4"></i>
-              <p class="text-white">Angular</p>
-            </div>
-            <div
-              class="bg-gray-800 p-6 rounded-lg border-2 border-transparent hover:border-white hover:shadow-lg transform hover:scale-105 transition-all duration-300 ease-out"
-            >
-              <i class="fab fa-node fa-3x text-green-600 mb-4"></i>
-              <p class="text-white">Node.js</p>
-            </div>
-            <!-- Tailwind CSS -->
-            <div
-              class="bg-gray-800 p-6 rounded-lg border-2 border-transparent hover:border-white hover:shadow-lg transform hover:scale-105 transition-all duration-300 ease-out"
-            >
-              <img
-                src="img/tailwind.png"
-                alt="Tailwind CSS Logo"
-                class="w-16 h-auto mx-auto mb-4 transition-transform duration-300 ease-out hover:scale-110"
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 19l-7-7 7-7"
               />
-              <p class="text-white">Tailwind CSS</p>
-            </div>
-
-            <!-- Bootstrap -->
-            <div
-              class="bg-gray-800 p-6 rounded-lg border-2 border-transparent hover:border-white hover:shadow-lg transform hover:scale-105 transition-all duration-300 ease-out"
+            </svg>
+          </button>
+          <button
+            id="next-btn"
+            class="absolute top-1/2 -right-4 transform -translate-y-1/2 bg-blue-500 hover:bg-blue-600 text-white rounded-full p-3 focus:outline-none transition-all duration-300 hover:scale-110 shadow-lg"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
             >
-              <i class="fab fa-bootstrap fa-3x text-purple-600 mb-4"></i>
-              <p class="text-white">Bootstrap</p>
-            </div>
-          </div>
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </button>
         </div>
 
-        <!-- Tools & Technologies -->
-        <div class="mb-12">
-          <h3 class="text-2xl text-center font-semibold text-white mb-6">
-            Tools & Technologies
-          </h3>
-          <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-            <div
-              class="bg-gray-800 p-6 rounded-lg border-2 border-transparent hover:border-white hover:shadow-lg transform hover:scale-105 transition-all duration-300 ease-out"
-            >
-              <i class="fab fa-docker fa-3x text-blue-600 mb-4"></i>
-              <p class="text-white">Docker</p>
-            </div>
-            <div
-              class="bg-gray-800 p-6 rounded-lg border-2 border-transparent hover:border-white hover:shadow-lg transform hover:scale-105 transition-all duration-300 ease-out"
-            >
-              <i class="fab fa-git fa-3x text-orange-600 mb-4"></i>
-              <p class="text-white">Git</p>
-            </div>
-            <div
-              class="bg-gray-800 p-6 rounded-lg border-2 border-transparent hover:border-white hover:shadow-lg transform hover:scale-105 transition-all duration-300 ease-out"
-            >
-              <i class="fab fa-aws fa-3x text-yellow-600 mb-4"></i>
-              <p class="text-white">AWS</p>
-            </div>
-            <div
-              class="bg-gray-800 p-6 rounded-lg border-2 border-transparent hover:border-white hover:shadow-lg transform hover:scale-105 transition-all duration-300 ease-out"
-            >
-              <i class="fab fa-linux fa-3x text-gray-400 mb-4"></i>
-              <p class="text-white">Linux</p>
-            </div>
-          </div>
+        <!-- Slider Indicators -->
+        <div class="flex justify-center mt-8 space-x-2">
+          <button
+            class="w-3 h-3 rounded-full bg-blue-500 focus:outline-none transition-all duration-300 hover:scale-125"
+            data-slide="0"
+          ></button>
+          <button
+            class="w-3 h-3 rounded-full bg-gray-400 focus:outline-none transition-all duration-300 hover:scale-125"
+            data-slide="1"
+          ></button>
+          <button
+            class="w-3 h-3 rounded-full bg-gray-400 focus:outline-none transition-all duration-300 hover:scale-125"
+            data-slide="2"
+          ></button>
         </div>
       </div>
     </section>
@@ -752,6 +808,68 @@
       </div>
     </section>
 
+    <!-- Contact -->
+    <section id="contact" class="py-24 px-4 md:px-8 lg:px-16 bg-gray-50">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-center text-4xl font-bold mb-16 relative">
+          <span
+            class="relative inline-block px-6 py-2 bg-gradient-to-r from-blue-500 to-green-500 text-transparent bg-clip-text"
+          >
+            Contact
+          </span>
+          <div class="max-w-4xl mx-auto my-8 text-center">
+            <!-- <h3 class="text-2xl font-bold mb-4">Socials</h3> -->
+            <p class="text-gray-700 mb-8">
+              Connect with me on various platforms to see my work, thoughts, and
+              daily adventures:
+            </p>
+            <div class="flex justify-center space-x-8">
+              <a
+                href="https://github.com/aldrian96"
+                target="_blank"
+                class="text-gray-600 hover:text-black transition duration-300"
+              >
+                <i class="fab fa-github text-3xl"></i>
+                <p class="mt-2 text-sm">GitHub</p>
+              </a>
+              <a
+                href="https://medium.com/@mhmdsaldrian96"
+                target="_blank"
+                class="text-gray-600 hover:text-gray-800 transition duration-300"
+              >
+                <i class="fab fa-medium text-3xl"></i>
+                <p class="mt-2 text-sm">Medium</p>
+              </a>
+              <a
+                href="https://www.instagram.com/mchsaa_/"
+                target="_blank"
+                class="text-gray-600 hover:text-pink-500 transition duration-300"
+              >
+                <i class="fab fa-instagram text-3xl"></i>
+                <p class="mt-2 text-sm">Instagram</p>
+              </a>
+              <a
+                href="https://x.com/mhmdsaa28"
+                target="_blank"
+                class="text-gray-600 hover:text-blue-400 transition duration-300"
+              >
+                <i class="fa-brands fa-x-twitter text-3xl"></i>
+                <p class="mt-2 text-sm">Twitter</p>
+              </a>
+              <a
+                href="https://www.facebook.com/mochsald/"
+                target="_blank"
+                class="text-gray-600 hover:text-blue-600 transition duration-300"
+              >
+                <i class="fa-brands fa-facebook text-3xl"></i>
+                <p class="mt-2 text-sm">Facebook</p>
+              </a>
+            </div>
+          </div>
+        </h2>
+      </div>
+    </section>
+
     <script>
       const menuIcon = document.getElementById("menu-icon");
       const mobileMenu = document.getElementById("mobile-menu");
@@ -763,6 +881,44 @@
       }
 
       menuIcon.addEventListener("click", toggleMenu);
+
+      // Slider
+      document.addEventListener("DOMContentLoaded", () => {
+        const track = document.getElementById("skills-track");
+        const prevBtn = document.getElementById("prev-btn");
+        const nextBtn = document.getElementById("next-btn");
+        const indicators = document.querySelectorAll("[data-slide]");
+        let currentSlide = 0;
+        const slideCount = track.children.length;
+
+        function updateSlider() {
+          track.style.transform = `translateX(-${currentSlide * 100}%)`;
+          indicators.forEach((indicator, index) => {
+            if (index === currentSlide) {
+              indicator.classList.replace("bg-gray-400", "bg-blue-500");
+            } else {
+              indicator.classList.replace("bg-blue-500", "bg-gray-400");
+            }
+          });
+        }
+
+        prevBtn.addEventListener("click", () => {
+          currentSlide = (currentSlide - 1 + slideCount) % slideCount;
+          updateSlider();
+        });
+
+        nextBtn.addEventListener("click", () => {
+          currentSlide = (currentSlide + 1) % slideCount;
+          updateSlider();
+        });
+
+        indicators.forEach((indicator, index) => {
+          indicator.addEventListener("click", () => {
+            currentSlide = index;
+            updateSlider();
+          });
+        });
+      });
     </script>
   </body>
 </html>
